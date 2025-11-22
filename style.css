@@ -1,0 +1,178 @@
+/* -------------------- */
+/*  COLOR PALETTE       */
+/* -------------------- */
+:root {
+    --dark-bg: #0d0b14;        /* Hitam keunguan */
+    --light-bg: #1a1625;       /* Ungu sangat gelap */
+    --primary: #7b4bff;        /* Ungu muda */
+    --primary-light: #b497ff;  /* Ungu pastel */
+    --white: #ffffff;
+    --text-light: #e0d9ff;
+}
+
+/* -------------------- */
+/*  GLOBAL STYLING      */
+/* -------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--white);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+/* -------------------- */
+/*  HEADER / NAVBAR     */
+/* -------------------- */
+header {
+    padding: 20px 40px;
+    background: var(--light-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav a {
+    margin-left: 20px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* -------------------- */
+/*  HERO SECTION        */
+/* -------------------- */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 50px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    color: var(--primary-light);
+}
+
+.hero-text p {
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(123, 75, 255, 0.3);
+}
+
+/* -------------------- */
+/*  BIOGRAPHY SECTION   */
+/* -------------------- */
+.bio-section {
+    display: flex;
+    padding: 60px 40px;
+    gap: 40px;
+    align-items: center;
+}
+
+.bio-image img {
+    width: 260px;
+    border-radius: 15px;
+    border: 3px solid var(--primary);
+}
+
+.bio-details h2 {
+    color: var(--primary-light);
+}
+
+/* -------------------- */
+/*  SKILLS SECTION      */
+/* -------------------- */
+.skills-section {
+    padding: 60px 40px;
+    background: var(--light-bg);
+}
+
+.skill-card {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+    color: var(--white);
+}
+
+.skill-card:hover {
+    background: var(--primary);
+    transform: translateY(-4px);
+    color: var(--white);
+}
+
+/* -------------------- */
+/*  PROJECT GRID        */
+/* -------------------- */
+.project-card {
+    background: var(--dark-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+/* -------------------- */
+/*  BUTTON              */
+/* -------------------- */
+.btn {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-light);
+    transform: translateY(-3px);
+}
+
+/* -------------------- */
+/*  FOOTER              */
+/* -------------------- */
+footer {
+    padding: 20px 40px;
+    background: var(--light-bg);
+    color: var(--primary-light);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
